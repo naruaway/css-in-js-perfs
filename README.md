@@ -41,7 +41,7 @@ ChakraBox: 778% of the baseline (2.153ms)
 ```
 
 We see that just using Kuma can slow down the performance even when all the styles can be statically extracted.
-Also when styles are dynamic, SSR duration is **694%** of the baseline, which implies expanding the scope of static extraction can be beneficial.
+Also when styles are dynamic, SSR duration is **680%** of the baseline, which implies expanding the scope of static extraction can be beneficial.
 
 ## Kuma UI
 
