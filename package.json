@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "license": "ISC",
+  "name": "demo-kuma-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run ssr:build && npm run ssr:run",
+    "ssr:build": "./node_modules/.bin/vite build  --outDir dist/server --ssr src/main.tsx",
+    "ssr:run": "NODE_ENV=production node dist/server/main.mjs",
+    "clean": "rm -rf ./dist"
+  },
+  "dependencies": {
+    "@kuma-ui/core": "1.1.0",
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@kuma-ui/vite": "1.0.3",
+    "@vitejs/plugin-react": "4.0.3",
+    "prettier": "3.0.0",
+    "vite": "4.4.4"
+  }
+}
