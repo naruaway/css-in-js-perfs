@@ -10,6 +10,7 @@
     "clean": "rm -rf ./dist"
   },
   "dependencies": {
+    "@chakra-ui/react": "2.7.1",
     "@kuma-ui/core": "1.1.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",

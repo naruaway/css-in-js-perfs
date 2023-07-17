@@ -1,6 +1,7 @@
 import { Button } from '@kuma-ui/core'
 import type { ComponentType } from 'react'
 import { renderToString } from 'react-dom/server'
+import { Box } from "@chakra-ui/react"
 
 const INDEX_ARRAY = Array.from({ length: 1000 }, (_, i) => i)
 
@@ -16,6 +17,10 @@ const StaticKuma = (props: { flag: boolean }) => {
   >
     My Button
   </Button>
+}
+
+const ChakraBox = (props: { flag: boolean }) => {
+  return <Box sx={{ color: 'red' }}>My Box</Box>
 }
 
 const DynamicKuma = (props: { flag: boolean }) => {
@@ -66,6 +71,7 @@ const targets: Record<string, TargetComponent> = {
   PlainButton,
   StaticKuma,
   DynamicKuma,
+  ChakraBox
 }
 
 const main = () => {
