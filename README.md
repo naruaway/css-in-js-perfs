@@ -31,12 +31,13 @@ npm run start
 
 #### The result in my environment
 
-I ran `npm run start` on my MacBook Air (M2 chip) with Node.js v20.4.0:
+I ran `npm run start` on my MacBook Air (M2 chip) with Node.js v20.4.0 (tested using commit `c0acd010409c08a370d786215da16416b090756e`):
 
 ```
-PlainButton: 100% of the baseline (0.268ms)
-StaticKuma: 248% of the baseline (0.667ms)
-DynamicKuma: 694% of the baseline (1.864ms)
+PlainButton: 100% of the baseline (0.277ms)
+StaticKuma: 245% of the baseline (0.678ms)
+DynamicKuma: 680% of the baseline (1.884ms)
+ChakraBox: 778% of the baseline (2.153ms)
 ```
 
 We see that just using Kuma can slow down the performance even when all the styles can be statically extracted.
